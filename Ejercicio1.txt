@@ -1,0 +1,1 @@
+1. Determinar el perimetro de un rectangulo.

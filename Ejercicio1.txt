@@ -1,1 +1,1 @@
-1. Determinar el perimetro de un rectangulo.
+1. Diseñar un algoritmo que imprima en la pantalla los primeros “n” múltiplos de 7 (positivo mayores que cero)

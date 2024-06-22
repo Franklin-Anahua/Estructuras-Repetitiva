@@ -1,1 +1,28 @@
 4. Se necesita un programa que solicite los N gastos realizados en un viaje. El programa consultará si desea continuar ingresando gastos, y mostrara al final la suma de los N gastos.
+
+#include <iostream>
+using namespace std;
+int main() 
+{
+    int n;
+    double gasto, suma = 0;
+    char continuar;
+    cout << "Ingrese la cantidad de gastos a registrar: ";
+    cin >> n;
+    for(int i = 0; i < n; i++) {
+        cout << "Ingrese el gasto realizado: ";
+        cin >> gasto;
+        suma += gasto;
+
+        cout << "¿Desea continuar ingresando gastos? (S/N): ";
+        cin >> continuar;
+
+        if(continuar != 'S' && continuar != 's') {
+            break;
+        }
+    }
+
+    cout << "La suma total de los gastos es: " << suma << endl;
+
+    return 0;
+}

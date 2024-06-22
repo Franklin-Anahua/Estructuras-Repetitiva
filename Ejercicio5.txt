@@ -1,0 +1,40 @@
+5. Un profesor necesita un programa que solicite las notas de N estudiantes del curso ha dictado en la universidad. El programa consultará si desea continuar ingresando notas, y mostrará al final la cantidad de aprobados y desaprobados y el promedio del salón
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    float nota, sumaNotas = 0;
+    int aprobados = 0, desaprobados = 0;
+
+    cout << "Ingrese la cantidad de estudiantes: ";
+    cin >> n;
+
+    for (int i = 0; i < n; i++) {
+        cout << "Ingrese la nota del estudiante " << i+1 << ": ";
+        cin >> nota;
+        sumaNotas += nota;
+        if (nota >= 60) {
+            aprobados++;
+        } else {
+            desaprobados++;
+        }
+
+        char continuar;
+        cout << "¿Desea continuar ingresando notas? (s/n): ";
+        cin >> continuar;
+
+        if (continuar != 's' && continuar != 'S') {
+            break;
+        }
+    }
+
+    float promedio = sumaNotas / n;
+
+    cout << "Cantidad de aprobados: " << aprobados << endl;
+    cout << "Cantidad de desaprobados: " << desaprobados << endl;
+    cout << "Promedio del salón: " << promedio << endl;
+
+    return 0;
+}

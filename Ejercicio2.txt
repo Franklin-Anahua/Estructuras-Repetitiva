@@ -1,0 +1,1 @@
+2. Leer números por teclado hasta introducir uno negativo

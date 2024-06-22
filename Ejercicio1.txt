@@ -1,1 +1,16 @@
 1. Diseñar un algoritmo que imprima en la pantalla los primeros “n” múltiplos de 7 (positivo mayores que cero)
+
+#include <iostream>
+int main() 
+using namespace std;
+{
+    int n;
+    cout << "Ingrese la cantidad de múltiplos de 7 a imprimir: ";
+    cin >> n;
+    
+    for (int i = 1; i <= n; i++) {
+        std::cout << "Múltiplo de 7 * " << i << " : " << 7 * i << endl;
+    }
+    
+    return 0;
+}

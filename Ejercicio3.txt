@@ -1,1 +1,17 @@
 3. Realizar un algoritmo que sume los N primeros números naturales usando bucles.
+
+#include <iostream>
+using namespace std;
+int main() 
+{
+    int N, 
+    suma = 0;
+    cout << "Ingrese la cantidad de números naturales a sumar: ";
+    cin >> N;
+    for (int i = 1; i <= N; i++) {
+        suma += i;
+    }
+    cout << "La suma de los " << N << " primeros números naturales es: " << suma << std::endl;
+    return 0;
+}
+

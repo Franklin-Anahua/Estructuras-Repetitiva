@@ -1,2 +1,18 @@
 2. Leer números por teclado hasta introducir uno negativo
 Añadir más contenido
+
+#include <iostream>
+using namespace std;
+int main() 
+{
+    int num;
+    cout << "Introduce un número positivo (introduce un número negativo para salir): ";
+    cin >> num;
+    while(num >= 0) {
+        cout << "Has introducido el número: " << num << std::endl;
+        cout << "Introduce otro número positivo (introduce un número negativo para salir): ";
+        cin >> num;
+    }
+    cout << "Has introducido un número negativo. Saliendo del programa..." << std::endl;
+    return 0;
+}
